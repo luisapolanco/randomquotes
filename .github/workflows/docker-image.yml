@@ -20,7 +20,7 @@ jobs:
           docker login -u $DOCKER_USER -p $DOCKER_PASS
   
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag luisapolanco/express-randomquotes:latest
+        run: docker build . --file Dockerfile --tag luipolanco/express-randomquotes:latest
   
       - name: Docker Push
-        run: docker push luisapolanco/express-randomquotes
+        run: docker push luipolanco/express-randomquotes
